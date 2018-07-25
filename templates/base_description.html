@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}企业概况-广东成利建筑集团有限公司{% endblock %}
+
+{% block body %}
+    <!--中间部分-->
+    <div class="banner-min" style="background:url(/upload/attached/image/20170301/20170301111253_45592.jpg) no-repeat top center;"></div>
+    <div id="banner-middle">
+        <div class="qygk-left">
+            <div class="qygk-left-top">
+                <b></b><h3>企业概况</h3>
+            </div>
+            <div class="qygk-left-bottom">
+                <ul>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                    <a href="/index_24.html" class="menu-on">企业简介</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                    <a href="/index_21.html" >董事长致辞</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                    <a href="/index_20.html" >组织架构</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                    <a href="/index_19.html" >公司资质</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                    <a href="/index_18.html" >公司荣誉</a>
+                </ul>
+            </div>
+        </div>
+        <div class="qygk-right">
+            <div class="munu-info">
+                <div id="location">
+                    <b></b><span>当前位置 -> <a href="/">首页</a>->{% block current_location %}{% endblock current_location%}</span>
+                </div>
+                <div class="menu-content">
+                {% block content %}{% endblock content%}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body%}
