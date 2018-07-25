@@ -1,0 +1,295 @@
+{% load staticfiles %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>首页-广东成利建设集团有限公司 </title>
+<link rel="stylesheet" href="{% static 'css/default.css' %}" />
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/idangerous_swiper.css' %}">
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/SuperSlide.js' %}"></script>
+<script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
+<script src="{% static 'js/idangerous.swiper.progress.js' %}"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<div id="index-box">
+<div id="head">
+<img src="{% static 'images/logo.png' %}">
+<div class="head-search">
+<form action="" method="post">
+<input type="text" name="keyword">
+<input type="submit" class="submit" value="搜索">
+</form>
+</div>
+</div>
+</div>
+<!--menu start-->
+<div id="menu">
+<div class="menu-top">
+<ul>
+<li ><a href={% url 'gdcl_index:index' %}>首页</a></li>
+<li ><a href={% url 'gdcl_index:description' %}>企业概况</a></li>
+<li ><a href={% url 'gdcl_index:culture' %}>企业文化</a></li>
+<li ><a href={% url 'gdcl_index:works' %}>工程业绩</a></li>
+<li ><a href={% url 'gdcl_index:news' %}>新闻资讯</a></li>
+<li ><a href={% url 'gdcl_index:contact' %}>加入我们</a></li>
+</ul>
+</div>
+
+<!--flash-->
+<div class="banner">
+<div class="banner-Btn">
+<a class="banner-left" href="javascript:void(0)"></a>
+<a class="banner-right" href="javascript:void(0)"></a>
+</div>
+<div class="pagination"></div>
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div style="background-image: url(/template/default/img/ad01.jpg);"></div>
+</div>
+<div class="swiper-slide">
+<div style="background-image: url(/template/default/img/ad02.jpg); "></div>
+</div>
+<div class="swiper-slide">
+<div style="background-image: url(/template/default/img/ad03.gif); "></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var bannerSwiper = new Swiper('.swiper-container',{
+pagination: '.pagination',
+loop: true,
+grabCursor: true,
+paginationClickable: true,
+autoplay : 1000,
+autoplayDisableOnInteraction : false,
+})
+$(".pagination span").on('touchstart mousedown', function(e) {
+e.preventDefault()
+$(".tabs .active").removeClass('active')
+$(this).addClass('active')
+bannerSwiper.swipeTo($(this).index())
+$('.mores a').hide();
+$('.mores a').eq($(this).index()).show();
+})
+
+$('.banner-left').click(function(){
+bannerSwiper.swipePrev();
+})
+$('.banner-right').click(function(){
+bannerSwiper.swipeNext();
+})
+</script>
+</div>
+<!--flash end, middle content start-->
+<!--企业简介/企业新闻/企业视频-->
+<div id="middle">
+<!--news-->
+<div id="middle-top">
+<div class="index-news">
+ <div class="index-news-top">
+<b></b>
+<h3>企业简介</h3>
+<a href="/index_24.html"><span>more</span> <i class="iconfont" id="font-more"></i></a>
+ </div>
+  <div class="index-news-bottom">
+ <img src="/upload/attached/image/20170302/20170302093359_99821.jpg">
+ <span> 广东建安昌盛工程有限公司成立于1985年，前身为珠海经济特区昌盛实业公司、珠海市建安昌盛工程有限公司。公司于2000年改制为股份制公司，具有独立法人资格和国家一级总承包...<a href="/info_5.html">[更多]</a>
+ </span>
+ </div>
+ </div>
+
+<div class="xwdt slideTxtBox">
+   <div class="hd">
+<ul class="xwdt-title">
+<b></b>
+<li><span class="xwdt-title-1"><a href="javascript:void(0)">企业新闻</a></span></li>
+<li><span class="xwdt-title-2"><a href="javascript:void(0)">行业动态</a></span></li>
+</ul>
+<li class="hydt-more"><a href="/index_2.html"><span>more</span><i class="iconfont"></i></a></li>
+</div>
+<div class="bd">
+<ul><!--新闻动态部分-->
+ <li>
+   <span class="date">2017-04-01</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_174.html"><i class="iconfont newsfont"></i>高新区领导莅临我司金鼎文化中心（广场）工程调研指导工作</a><span class="xwdt-xuxian"> </span>
+</li>
+ <li>
+   <span class="date">2017-03-31</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_177.html"><i class="iconfont newsfont"></i>碧涛花园第八期（1-4号楼及地下车库）住宅小区工程正式开工</a><span class="xwdt-xuxian"> </span>
+</li>
+ <li>
+   <span class="date">2017-03-31</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_176.html"><i class="iconfont newsfont"></i>中山建协2017年年会暨工程创优表彰大会顺利召开，我司荣获多项荣誉</a><span class="xwdt-xuxian"> </span>
+</li>
+ <li>
+   <span class="date">2017-01-14</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_178.html"><i class="iconfont newsfont"></i>饮水思源，共促双拥</a><span class="xwdt-xuxian"> </span>
+</li>
+ <li>
+   <span class="date">2016-09-09</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_55.html"><i class="iconfont newsfont"></i>中山市现场质量观摩会在广东建安昌盛公司嘉德花园项目召开</a><span class="xwdt-xuxian"> </span>
+</li>
+ <li>
+   <span class="date">2016-08-01</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_53.html"><i class="iconfont newsfont"></i>热烈祝贺港珠澳大桥安置房项目顺利提前封顶</a><span class="xwdt-xuxian"> </span>
+</li>
+ </ul>
+<ul><!--行业动态部分-->
+ <li>
+   <span class="date">2015-01-28</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_60.html"><i class="iconfont newsfont"></i>急需打造更务实的“2.0版”绿色建筑</a><span class="xwdt-xuxian"> </span>
+</li>
+<li>
+   <span class="date">2015-01-26</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_59.html"><i class="iconfont newsfont"></i>珠海将推“两金”治“欠薪”</a><span class="xwdt-xuxian"> </span>
+</li>
+<li>
+   <span class="date">2015-01-23</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_58.html"><i class="iconfont newsfont"></i>2015造价员《土建工程》：民用建筑的分类</a><span class="xwdt-xuxian"> </span>
+</li>
+<li>
+   <span class="date">2015-01-20</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_57.html"><i class="iconfont newsfont"></i>珠海大剧院等4重点项目将申报“鲁班奖”</a><span class="xwdt-xuxian"> </span>
+</li>
+<li>
+   <span class="date">2015-01-08</span>
+   <span class="xwdt-radius"> </span>
+   <a href="/info_56.html"><i class="iconfont newsfont"></i>住建部:11月千余个建筑工程项目存在市场违法行为</a><span class="xwdt-xuxian"> </span>
+</li>
+</ul>
+
+</div>
+</div>
+<script type="text/javascript">
+jQuery(".slideTxtBox").slide({});
+//jQuery(".slideTxtBox").slide({autoPlay:true});
+</script>
+<!--企业视频-->
+<div id="video">
+<div class="index-news-top">
+<b></b>
+<h3>企业视频</h3>
+<a href="/index_14.html"><span>more</span> <i class="iconfont" id="font-more"></i></a>
+ </div>
+ <div class="video-bottom">
+ <div>
+<video class="video" controls="controls"  autoplay="autoplay"><source src="/template/default/video.mp4" type="video/mp4"></source></video>
+</div>
+</div>
+</div>
+</div>
+
+<!--工程业绩-->
+<div id="middle-bottom">
+<div class="index-gongcheng">
+<b></b>
+<h3>工程业绩</h3>
+<a href="/index_10.html"><span>more</span> <i class="iconfont" id="font-more"></i></a>
+ </div>
+
+<div class="picMarquee-left">
+<div class="bd">
+<ul class="picList">
+<li>
+<div class="pic"><a href="/info_97.html" ><img src="/upload/attached/image/20170427/20170427172643_71331.jpg" /></a></div>
+<div class="title"><a href="/info_97.html" >洲际豪庭</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_96.html" ><img src="/upload/attached/image/20170427/20170427172559_65514.jpg" /></a></div>
+<div class="title"><a href="/info_96.html" >中航花园</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_95.html" ><img src="/upload/attached/image/20170427/20170427172512_10831.jpg" /></a></div>
+<div class="title"><a href="/info_95.html" >新都会花园</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_93.html" ><img src="/upload/attached/image/20170427/20170427172307_50307.jpg" /></a></div>
+<div class="title"><a href="/info_93.html" >藤荣尚府</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_92.html" ><img src="/upload/attached/image/20170427/20170427172210_32018.jpg" /></a></div>
+<div class="title"><a href="/info_92.html" >双城汇</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_91.html" ><img src="/upload/attached/image/20170427/20170427172119_82221.jpg" /></a></div>
+<div class="title"><a href="/info_91.html" >绅威游艇</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_90.html" ><img src="/upload/attached/image/20170427/20170427172029_76681.jpg" /></a></div>
+<div class="title"><a href="/info_90.html" >赛纳宿舍楼</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_89.html" ><img src="/upload/attached/image/20170427/20170427171916_78723.jpg" /></a></div>
+<div class="title"><a href="/info_89.html" >赛纳</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_88.html" ><img src="/upload/attached/image/20170427/20170427171824_31770.jpg" /></a></div>
+<div class="title"><a href="/info_88.html" >南水汽车客运站</a></div>
+</li>
+<li>
+<div class="pic"><a href="/info_87.html" ><img src="/upload/attached/image/20170427/20170427171706_25744.jpg" /></a></div>
+<div class="title"><a href="/info_87.html" >锦绣四季花园</a></div>
+</li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:30});
+</script>
+</div>
+</div>
+
+
+<!--footer-->
+<div style="clear:both;"></div>
+<div id="footer">
+<div class="foot-top">
+<ul>
+<li><a href="">首页</a></li>
+<li><a href="">企业概况</a></li>
+<li><a href="">工程业绩</a></li>
+<li><a href="">加入我们</a></li>
+</ul>
+</div>
+<p>地址：珠海市香洲梅华东路188号华南名宇11栋3单元三、四楼   电话：0756-2181888   传真：0756-2181838 </p>
+<span>版权所有©广东建安昌盛工程有限公司   粤ICP备18010232号-1</span>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

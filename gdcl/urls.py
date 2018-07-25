@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^organization/$', views.organization, name='organization'),
     url(r'^certification/$', views.certification, name='certification'),
     url(r'^reputation/$', views.reputation, name='reputation'),
+    url(r'^news/$', views.news, name='news'),
 ]
