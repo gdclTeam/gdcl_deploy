@@ -1,91 +1,121 @@
 {% load staticfiles %}
-<input  type='hidden' id='loginusername' value='暂无'><input  type='hidden' id='loginemail' value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
+                                                          value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-<title>{% block title %}{% endblock title%} </title>
-<link rel="stylesheet" href="{% static 'css/default.css' %}" />
-<link rel="stylesheet" href="{% static 'css/style.css' %}" />
-<link rel="stylesheet" href="{% static 'css/idangerous_swiper.css' %}">
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/SuperSlide.js' %}"></script>
-<script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
-<script src="{% static 'js/idangerous.swiper.progress.js' %}"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>{% block title %}{% endblock title %} </title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/idangerous_swiper.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/SuperSlide.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.progress.js' %}"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <div id="index-box">
-<div id="head">
-<img src="{% static 'images/logo.png' %}">
-<div class="head-search">
-<form action="" method="post">
-<input type="text" name="keyword">
-<input type="submit" class="submit" value="搜索">
-</form>
-</div>
-</div>
+    <div id="head">
+        <img src="{% static 'images/logo.png' %}">
+        <div class="head-search">
+            <form action="" method="post">
+                <input type="text" name="keyword">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+        </div>
+    </div>
 </div>
 <!--menu start-->
 <div id="menu">
-<div class="menu-top">
-<ul>
-<li >
-<a href="http://www.zhcsgc.com/">首页</a></li>
-<li class="select">
-<a href={% url 'gdcl:description' %}>企业概况</a></li>
-<li >
-<a href={% url 'gdcl:culture' %}>企业文化</a></li>
-<li >
-<a href={% url 'gdcl:works' %}>工程业绩</a></li>
-<li >
-<a href={% url 'gdcl:news' %}>新闻资讯</a></li>
-<li >
-<a href={% url 'gdcl:contact' %}>加入我们</a></li>
-</ul>
-</div>
+    <div class="menu-top">
+        <ul>
+            <li>
+                <a href="http://www.zhcsgc.com/">首页</a></li>
+            <li class="select">
+                <a href={% url 'gdcl:description' %}>企业概况</a></li>
+            <li>
+                <a href={% url 'gdcl:culture' %}>企业文化</a></li>
+            <li>
+                <a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li>
+                <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
+            <li>
+                <a href={% url 'gdcl:contact' %}>加入我们</a></li>
+        </ul>
+    </div>
 </div>
 
-{% block body %}{% endblock body%}
+{% block body %}{% endblock body %}
 <!--内容详情页-->
-<img src="/template/default/img/in.jpg" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东建安昌盛工程有限公司成立于1985年，前身为珠海经济特区昌盛实业公司、珠海市建安昌盛工程有限公司。公司于2000年改制为股份制公司，具有独立法人资格和国家一级总承包、专业承包施工资质，注册资本金为人民币30028.01万元，施工资质包括房屋建筑工程施工总承包、市政公用工程施工总承包以及建筑装饰、钢结构、土石方、地基和基础、机电设备安装、体育场地设施、建筑幕墙、消防设施等工程专业承包资质。公司通过了ISO9001：2008标准质量管理体系、ISO14001：2004标准环境管理体系及OHSAS18001：2007标准职业健康安全管理体系认证，并取得广东省建设厅颁发的安全生产许可证。<br />
+<img src="{% static 'images/in.jpg' %}"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东成利建设集团有限公司（简称广东成利），于2008年05月30日成立，企业注册资金6800万元。<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-公司在金鼎高新区收购近四万平方米生产加工建材、钢材、五金及钢构件的厂房，属下设有珠海市昌盛建筑科技产业园、珠海富茂钢结构有限公司、珠海市横琴建安昌盛投资有限公司、珠海市建安昌盛建材有限公司、珠海市昌盛园林绿化有限公司、珠海市昌盛劳务分包有限公司、珠海市高新经典昌盛建设工程有限公司、珠海市建安昌盛智能集成房屋有限公司等子公司。<br />
+广东成利从起初的园林绿化施工企业逐步成长为市政公用工程、建筑工程、园林绿化、地基基础工程、建筑机电安装工程、建筑装修装饰工程、环保工程、钢结构工程、建筑幕墙工程、水利水电工程施工等十余项工程施工资质。<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-公司现有工民建、建筑结构、市政、给排水、路桥、电气、造价、经济、会计等各类工程专业技术人员和经济人员近600人，其中高级职称人员29人，中级职称人员113人，各级建造师（项目经理）80余人，施工员、质安员、预结算及各类特殊工种上岗人员400多人。公司内设董事会、监事会、总经理室、总工程师室、总经济师室、总会计师室、办公室、工程部、质安部、经营部、采购部、计财部、分公司、项目经理部等职能部门；拥有劳务人员4000多人；各类主要建筑机械、筑路机械及设备、仪器400多台套，每年完成工程总产值人民币三十多亿元。<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-公司自成立以来承建了大小工程项目几千个，近年来承建了万科红树东岸，万科海愉半岛，雅居乐御龙山，金域华府，银石雅园，华南名宇，荣泰河庭，岭南世家，五洲花城，世纪名城，洲际豪庭，碧溪丽城，公园道，锦绣四季花园等多个大型住宅小区工程；珠海海赛纳打印科技股份有限公司厂房及宿舍楼，绅威游艇新建厂房，东信和平厂区，伟创力B9厂房，佳能公司厂房，格力家电生产基地，利丰羽毛制品金鼎厂区，佳粤造船公司厂区，爱尔电器厂区，元朗食品厂区，中山保税物流中心仓库等大型仓储、厂区工程；桃园中学，斗门一中高中部，和风中学，遵义学院珠海校区综合楼，吉林大学珠海学院教师学生公寓、活动中心、图书馆，肇庆高新区人民医院一期、金湾区人民医院、金鼎卫生院和法律服务大楼等公共建设工程；迎宾南路改造，人民西路，情侣路，白蕉路1＃桥，布吉惠康路等市政工程；金帆路路基土石方，虎骨龙山修坡，横琴岛澳门大学新校区填土，220KV八一变电站站址等土石方工程和珠海市档案馆新馆二期，金海岸文化艺术中心,度假村酒店，石景山酒店，丽珠总部大楼，光联通讯技术公司1＃厂房，湾仔免税商场，市档案文献陈列展览馆，珠海松下马达新厂房等一大批装修工程。<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-公司所承建的工程项目多次获得了国家、省、市嘉奖，其中：珠海市档案馆新馆二期工程荣获全国建筑工程装饰奖；金湾区人民医院（新三灶医院）、高新区金鼎卫生院综合住院楼（改扩建项目一期）项目、珠海市水岸林语庭院、利鑫机械制造厂区一期工程荣获国家AAA级安全文明诚信工地；珠海赛纳打印科技股份有限公司1-3#宿舍楼、碧溪丽城S1区13栋及地下室、珠海市环境监测监控中心工程、珠海民营科技大厦附楼、利丰羽毛制品金鼎厂区工程荣获广东省金匠奖；珠海茂丰纺织有限公司厂房二期、珠海市环境监测监控中心、东信和平科技园综合楼、伟创力B9厂房、珠海许继电器二期，爱尔电器一期厂房、岭南世家8栋、迎宾南路改造等荣获广东省优良样板工程；珠海市环境监测监控中心工程、珠海茂隆实业有限公司厂房D工程、碧溪丽城12-16栋光联通讯中心试验楼、宿舍楼、横山中心小学、旺旺食品生产主楼、市计划生育服务中心二期、市法律服务大楼等项目荣获珠海市优良样板工程；荣泰河庭二期、荣泰河庭C1区1-4#楼、佳能公司C2栋厂房二期，元朗食品A、B、C栋厂房，光联通讯2#宿舍楼荣获广东省安全生产、文明施工双优良工地；佳讯赛特厂区、伟创力B9厂房、斗门第一中学高中部宿舍楼、水岸林语、碧溪丽城、鸿硕科技厂区、特普力高厂区等一大批工地获得了珠海市安全生产、文明施工双优良工地称号。公司承建的荣泰河庭项目，在预防高空坠落等方面由于措施落实、管理到位、成绩突出，省、市建设局专门组织了有关部门和人员在该工地召开了预防“高空坠落”专项现场会，并组织了全省各地的有关人员进行参观。<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-在多年的企业管理中，我们始终坚持质量第一、用户第一、信誉第一，做好每一个工程项目；由于承建的工程项目工程质量好、速度快、工期保证、保修周全，在社会上享有良好的信誉，深得业主的赞赏。多年荣获广东省、珠海市安全生产监督管理局、珠海市建设局连年颁发的《建筑工程安全生产文明施工先进单位》，全国市场诚信建设组织委员会颁发的《诚信技术示范单位》，《建筑施工装饰放心企业》，珠海市工商行政管理局自二〇〇三年至今连年颁发的重合同守信用企业，珠海市国家税务局珠海市地方税务局连续多年颁发的《税收贡献百强》企业，珠海市建设局颁发的建筑系统维护稳定施工企业等荣誉称号。<br />
-<img src="/template/default/img/in2.jpg" /> <br />
-<br />
+广东成利，始终遵循“成效靠质安文明管理，利益重信誉科学经营”的企业使命，坚持贯彻“温厚至诚，精勤日新”企业理念，信奉“筑和厚生”的建筑哲学，坚守“工者至善”的技术精神，遵循“行仁重信”的商业伦理，追求和完善科学管理，以人才战略为依托，以具有高度社会责任感的企业形象面向社会，以优质、创新、诚信服务于各界。始终以建筑美好生活为己任，精心雕琢每一寸空间，倾心演绎建筑经典，矢志成为最专业、最值得信赖的建筑施工企业和最受尊敬的行业领跑者。<br/>
+<img src="/template/default/img/in2.jpg"/> <br/>
+<br/>
 <p style="text-align:center;font-weight:bold;">
-	Profile of the Company
+    Profile of the Company
 </p>
-<br />
+<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Guangdong Jian’an Changsheng Engineering Co.,Ltd., is a State Grade I building construction engineering enterprise and its general contracting qualifications include: General Contracting of Grade I Building Engineering Construction,General Constracting of Grade I Municipal Engineering.Specialized contracting qualifications, i.e, Building Construction Decoration Engineering, Groundwork and Foundation Engineering,Earth and Stone Engineering, along with Steel Structure Engineering and Building Curtain-wall Engineering.Now the Company has a staff of about 400 including various kinds of professional engineering technicians and economical personnel, among of them,over 30 have senior technical titles,over 100 have medium technical titles and more than 60 are project manager at different levels.<br />
+Guangdong Jian’an Changsheng Engineering Co.,Ltd., is a State Grade I building construction engineering enterprise and
+its general contracting qualifications include: General Contracting of Grade I Building Engineering Construction,General
+Constracting of Grade I Municipal Engineering.Specialized contracting qualifications, i.e, Building Construction
+Decoration Engineering, Groundwork and Foundation Engineering,Earth and Stone Engineering, along with Steel Structure
+Engineering and Building Curtain-wall Engineering.Now the Company has a staff of about 400 including various kinds of
+professional engineering technicians and economical personnel, among of them,over 30 have senior technical titles,over
+100 have medium technical titles and more than 60 are project manager at different levels.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       The Company has functional departments including Board of Directors, Board of Supervisors, General Manager Office, General Engineer Office, General Economic Engineer, General Accountant Office, Personnel Dept., Engineering Dept., Quality Safety Dept., Operation Dept., Equipment Dept., Finance Dept. and Project Manager Dept.; it has a large number of workers, and more than 300 sets of various kinds of building construction machinery, road building machinery and equipment.  The total value of the projects completed by the Company reaches 300 million yuan per year .<br />
+The Company has functional departments including Board of Directors, Board of Supervisors, General Manager Office,
+General Engineer Office, General Economic Engineer, General Accountant Office, Personnel Dept., Engineering Dept.,
+Quality Safety Dept., Operation Dept., Equipment Dept., Finance Dept. and Project Manager Dept.; it has a large number
+of workers, and more than 300 sets of various kinds of building construction machinery, road building machinery and
+equipment. The total value of the projects completed by the Company reaches 300 million yuan per year .<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       The company passed the GB/T19001-2008 quality Management System certilication,GB/T24001-2004 Environmental Management System certification,GB/T28001-2011 Occupational Health and Safety Management System certilication,the Guangdong Provincial Department of Construction to achieve the safe production licenses issued.<br />
+The company passed the GB/T19001-2008 quality Management System certilication,GB/T24001-2004 Environmental Management
+System certification,GB/T28001-2011 Occupational Health and Safety Management System certilication,the Guangdong
+Provincial Department of Construction to achieve the safe production licenses issued.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       It has completed about 1000 projects large or small. The main projects completed in recent years are: residence areas including Yinshi Yayuan, Huanan Mingyu, Rongtai Heting, Xuriwan, Wuzhou Huacheng, Sanhao Mingyuan,Lingnan Shijia,Shiji Mingcheng,Xindai Huayuan,Huiqian Huayuan,Zhouji Haoting ,Bixi Licheng,Shishang Xinyuan,GongYuanDao,JinxiuSiji，Jinyu Huafu,Zhonglian Xingji,Dongqiao Xincun;  Plant Lab Building and Dormitory Building of  Guanglian Communications Company, Phase I and Phase II of Xu Relay, Jinding Primary School, Senior High School Branch of Doumen No.1 Middle School, Law Service Building, Reconstruction Project of S.Yingbin Road, Dongxing Road, Cuiqian Road, Bitumen Road Surface of Liandao Levee, and Phase Drainage Project of Baijiao Industrial Park; Southern Flood-draining dyke of Baijiao Industry Park, No.1 Bridge of Baijiao Road, Sanban Bridge of Xiaolin, Decoration Project of Shijing Hill Hotel, Decoration Project of Headquarter Building of Lizhu Company, Decoration Project of Comprehensive Building of Yide Plaza, No.1 Plant of Guanglian Communications Company, and Wanzai Duty-free Mall.<br />
+It has completed about 1000 projects large or small. The main projects completed in recent years are: residence areas
+including Yinshi Yayuan, Huanan Mingyu, Rongtai Heting, Xuriwan, Wuzhou Huacheng, Sanhao Mingyuan,Lingnan Shijia,Shiji
+Mingcheng,Xindai Huayuan,Huiqian Huayuan,Zhouji Haoting ,Bixi Licheng,Shishang Xinyuan,GongYuanDao,JinxiuSiji，Jinyu
+Huafu,Zhonglian Xingji,Dongqiao Xincun; Plant Lab Building and Dormitory Building of Guanglian Communications Company,
+Phase I and Phase II of Xu Relay, Jinding Primary School, Senior High School Branch of Doumen No.1 Middle School, Law
+Service Building, Reconstruction Project of S.Yingbin Road, Dongxing Road, Cuiqian Road, Bitumen Road Surface of Liandao
+Levee, and Phase Drainage Project of Baijiao Industrial Park; Southern Flood-draining dyke of Baijiao Industry Park,
+No.1 Bridge of Baijiao Road, Sanban Bridge of Xiaolin, Decoration Project of Shijing Hill Hotel, Decoration Project of
+Headquarter Building of Lizhu Company, Decoration Project of Comprehensive Building of Yide Plaza, No.1 Plant of
+Guanglian Communications Company, and Wanzai Duty-free Mall.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Projects that won Excellent Example Project at Provincial and Municipal level are: Reconstruction Project of S.Yingbin Road, Comprehensive Building of Easton Peach Scientific and Technological Park, Lab Building and Dormitory Building of Guanglian Communication Company, Hengshan  Zhongxin Primary School, Main Production Building of Wangwang Food Co., Ltd.; Project that won Double Excellent Example Construction Site for Safe Production and Civilized Construction are: Langqingju, Dormitory Building of Senior High School Branch of Doumen Middle School, Sanhao Mingyuan, Phase II Project of Zhuhai Xu Relay and Plant of Zhuhai Yongbao Plastics Company. <br />
+Projects that won Excellent Example Project at Provincial and Municipal level are: Reconstruction Project of S.Yingbin
+Road, Comprehensive Building of Easton Peach Scientific and Technological Park, Lab Building and Dormitory Building of
+Guanglian Communication Company, Hengshan Zhongxin Primary School, Main Production Building of Wangwang Food Co., Ltd.;
+Project that won Double Excellent Example Construction Site for Safe Production and Civilized Construction are:
+Langqingju, Dormitory Building of Senior High School Branch of Doumen Middle School, Sanhao Mingyuan, Phase II Project
+of Zhuhai Xu Relay and Plant of Zhuhai Yongbao Plastics Company. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Rongtai Heting Project constructed by the Company has been highly acclaim among the industry for its strict and effective management measures on high falling. Provincial and Municipal Construction Bureaus specially organized relevant departments to held Special Site Meeting on Preventing High Falling on the construction site, and also organized experts from all parts of Guangdong Province to visit and experience exchange. <br />
+Rongtai Heting Project constructed by the Company has been highly acclaim among the industry for its strict and
+effective management measures on high falling. Provincial and Municipal Construction Bureaus specially organized
+relevant departments to held Special Site Meeting on Preventing High Falling on the construction site, and also
+organized experts from all parts of Guangdong Province to visit and experience exchange. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       During many years of construction management, we always adhere to the tenet of Quality First, Customer Supreme and Mutual Beneficial. Our company has been highly acclaimed among owners and all social walks for our high quality, fast speed, punctual schedule and considerate warranty service. The honorable titles that the Company won in recent years are: National Creditable Construction Example Unit, Zhuhai Excellent Building Engineering Unit for Safe and Civilized Unit and Reassurance Enterprise for Building Construction and Decoration, etc. It has been offered Creditable Enterprise By Zhuhai Industry and Commerce Administration in a continuous row years. <br />
+During many years of construction management, we always adhere to the tenet of Quality First, Customer Supreme and
+Mutual Beneficial. Our company has been highly acclaimed among owners and all social walks for our high quality, fast
+speed, punctual schedule and considerate warranty service. The honorable titles that the Company won in recent years
+are: National Creditable Construction Example Unit, Zhuhai Excellent Building Engineering Unit for Safe and Civilized
+Unit and Reassurance Enterprise for Building Construction and Decoration, etc. It has been offered Creditable Enterprise
+By Zhuhai Industry and Commerce Administration in a continuous row years. <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Changsheng will, as we did, exert itself in providing quality service and creating long-lasting Changsheng brand!<br /></div>
+Changsheng will, as we did, exert itself in providing quality service and creating long-lasting Changsheng
+brand!<br/></div>
 </div>
 </div>
 </div>
@@ -93,19 +123,22 @@
 <!--footer-->
 <div style="clear:both;"></div>
 <div id="footer">
-<div class="foot-top">
-<ul>
-<li><a href={% url 'gdcl:index' %}>首页</a></li>
-<li><a href={% url 'gdcl:description' %}>企业概况</a></li>
-<li><a href={% url 'gdcl:works' %}>工程业绩</a></li>
-<li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
-</ul>
-</div>
-<p>地址：珠海市香洲梅华东路188号华南名宇11栋3单元三、四楼   电话：0756-2181888   传真：0756-2181838 </p>
-<span>版权所有©广东建安昌盛工程有限公司   粤ICP备18010232号-1</span>
+    <div class="foot-top">
+        <ul>
+            <li><a href={% url 'gdcl:index' %}>首页</a></li>
+            <li><a href={% url 'gdcl:description' %}>企业概况</a></li>
+            <li><a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
+        </ul>
+    </div>
+    <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
+    <br>
+    <p>联系电话：</p>
+    <span>版权所有©广东成利建筑集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
 
 
 </div>
+</html>
 
 
 
