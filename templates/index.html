@@ -201,28 +201,29 @@
         </script>
 
         <!--企业视频-->
-{#        <div id="video">#}
-{#            <div class="index-news-top">#}
-{#                <b></b>#}
-{#                <h3>企业视频</h3>#}
-{#                <a href="/index_14.html"><span>more</span> <i class="iconfont" id="font-more"></i></a>#}
-{#            </div>#}
-{#            <div class="video-bottom">#}
-{#                <div>#}
-{#                    <video class="video" controls="controls" autoplay="autoplay">#}
-{#                        <source src="/template/default/video.mp4" type="video/mp4"></source>#}
-{#                    </video>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
+        <div id="video">
+            <div class="index-news-top">
+                <b></b>
+                <h3>企业视频</h3>
+                <a href={% url 'gdcl:video' %}><span>more</span> <i class="iconfont" id="font-more"></i></a>
+            </div>
+            <div class="video-bottom">
+                <div>
+                    <video class="video" controls="controls" autoplay="autoplay">
+                        <source src="/template/default/video.mp4" type="video/mp4"></source>
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
 
+{#    #}
     <!--工程业绩-->
     <div id="middle-bottom">
         <div class="index-gongcheng">
             <b></b>
             <h3>工程业绩</h3>
-            <a href="/rewards.html"><span>more</span> <i class="iconfont" id="font-more"></i></a>   //跳转到工程业绩页面
+            <a href={% url 'gdcl:rewards' %}><span>more</span> <i class="iconfont" id="font-more"></i></a>
         </div>
 
         <div class="picMarquee-left">
@@ -309,7 +310,7 @@
     <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
     <br>
     <p>联系电话：</p>
-    <span>版权所有©广东成利建筑集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
+    <span>版权所有©广东成利建利集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
 
 
 </div>

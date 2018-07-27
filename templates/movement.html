@@ -37,17 +37,17 @@
     <div class="menu-top">
         <ul>
             <li>
-                <a href="http://www.zhcsgc.com/">首页</a></li>
-            <li>
-                <a href="/description.html">企业概况</a></li>
-            <li>
-                <a href="/logo.html">企业文化</a></li>
-            <li>
-                <a href="/rewards.html">工程业绩</a></li>
+                <a href={% url 'gdcl:index' %}>首页</a></li>
             <li class="select">
-                <a href="/company_news.html">新闻资讯</a></li>
+                <a href={% url 'gdcl:description' %}>企业概况</a></li>
             <li>
-                <a href="/recruitment.html">加入我们</a></li>
+                <a href={% url 'gdcl:culture' %}>企业文化</a></li>
+            <li>
+                <a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li>
+                <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
+            <li>
+                <a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
     <!--中间部分-->
@@ -61,22 +61,26 @@
             </div>
             <div class="qygk-left-bottom">
                 <ul>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/company_news.html" >企业新闻</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/movement.html" class="menu-on">行业动态</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/note.html">通知公告</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/others.html">其它资讯</a></li>
+                    <li>
+                        <a href={% url 'gdcl:index' %}>首页</a></li>
+                    <li class="select">
+                        <a href={% url 'gdcl:description' %}>企业概况</a></li>
+                    <li>
+                        <a href={% url 'gdcl:culture' %}>企业文化</a></li>
+                    <li>
+                        <a href={% url 'gdcl:works' %}>工程业绩</a></li>
+                    <li>
+                        <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
+                    <li>
+                        <a href={% url 'gdcl:contact' %}>加入我们</a></li>
                 </ul>
             </div>
         </div>
         <div class="qygk-right">
             <div class="munu-info">
                 <div id="location">
-                    <b></b><span>当前位置 -> <a href="/">首页</a>-><a href="/company_news.html">新闻资讯</a>-><a
-                        href="/movement.html">行业动态</a></span>
+                    <b></b><span>当前位置 -> <a href={% url 'gdcl:index' %}>首页</a>-><a href={% url 'gdcl:company_news' %}>新闻资讯</a>-><a
+                        href={% url 'gdcl:movement' %}>行业动态</a></span>
                 </div>
                 <div class="menu-content">
                     <!--内容详情页-->

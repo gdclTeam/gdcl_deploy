@@ -37,17 +37,17 @@
     <div class="menu-top">
         <ul>
             <li>
-                <a href="http://www.zhcsgc.com/">首页</a></li>
-            <li>
-                <a href="/description.html">企业概况</a></li>
+                <a href={% url 'gdcl:index' %}>首页</a></li>
             <li class="select">
-                <a href="/logo.html">企业文化</a></li>
+                <a href={% url 'gdcl:description' %}>企业概况</a></li>
             <li>
-                <a href="/rewards.html">工程业绩</a></li>
+                <a href={% url 'gdcl:culture' %}>企业文化</a></li>
             <li>
-                <a href="/company_news.html">新闻资讯</a></li>
+                <a href={% url 'gdcl:works' %}>工程业绩</a></li>
             <li>
-                <a href="/recruitment.html">加入我们</a></li>
+                <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
+            <li>
+                <a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
     <!--中间部分-->
@@ -62,23 +62,23 @@
             <div class="qygk-left-bottom">
                 <ul>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/logo.html" class="menu-on">品牌标志</a>
+                        <a href={% url 'gdcl:logo' %} class="menu-on">品牌标志</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/management.html">管理理念</a>
+                        <a href={% url 'gdcl:management' %}>管理理念</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/show.html">形象展示</a>
+                        <a href={% url 'gdcl:show' %}>形象展示</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/video.html">企业视频</a>
+                        <a href={% url 'gdcl:video' %}>企业视频</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/employee.html">员工风采</a>
+                        <a href={% url 'gdcl:employee' %} class="menu-on">员工风采</a>
                 </ul>
             </div>
         </div>
         <div class="qygk-right">
             <div class="munu-info">
                 <div id="location">
-                    <b></b><span>当前位置 -> <a href="/">首页</a>-><a href="/logo.html">企业文化</a>-><a
-                        href="/logo.html">品牌标志</a></span>
+                    <b></b><span>当前位置 -> <a href={% url 'gdcl:index' %}>首页</a>-><a href={% url 'gdcl:logo' %}>企业文化</a>-><a
+                        href={% url 'gdcl:logo' %}>品牌标志</a></span>
                 </div>
                 <div class="menu-content">
                     <!--内容详情页-->
@@ -224,7 +224,7 @@
     <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
     <br>
     <p>联系电话：</p>
-    <span>版权所有©广东成利建筑集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
+    <span>版权所有©广东成利建利集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
 
 
 </div>
