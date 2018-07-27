@@ -16,21 +16,21 @@ body {
 	background: #f5f5f5;
 }
 
-/**include ali font**/
-@font-face {font-family: 'iconfont';
-    src: url('../font/iconfont.eot'); /* IE9*/
-    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
-    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
+/*!**include ali font**!*/
+/*@font-face {font-family: 'iconfont';*/
+    /*src: url('../font/iconfont.eot'); !* IE9*!*/
+    /*src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
+    /*url('../font/iconfont.woff') format('woff'), !* chrome、firefox *!*/
+    /*url('../font/iconfont.ttf') format('truetype'), !* chrome、firefox、opera、Safari, Android, iOS 4.2+*!*/
+    /*url('../font/iconfont.svg#iconfont') format('svg'); !* iOS 4.1- *!*/
+/*}*/
 p,ul,li,img,h1,h2,h3,h4,h5,h6{margin:0;padding:0;list-style:none;}
 span,a,b,p,i{font-size:14px;color:#333333;}
 a{text-decoration: none;}
 
 
 .iconfont{
-    font-family:"iconfont" !important;
+	font-family: "iconfont" !important;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
@@ -99,8 +99,8 @@ body{background: white;}
 /*左右箭头*/
 .banner-Btn{ width: 100%; position: absolute; margin: 0 auto; top: 50%;}
 .banner-Btn a{ width: 44px; height: 44px; display: block; position: absolute; z-index: 9999; opacity: .3; filter: alpha(opacity=30);}
-.banner-left{ background: url(../img/banner-prev-btn.png);  left: 50%; margin-left: -650px; margin-top: -21px;}
-.banner-right{ background: url(../img/banner-next-btn.png); right: 50%; margin-right: -650px; margin-top: -21px;}
+/*.banner-left{ background: url(../img/banner-prev-btn.png);  left: 50%; margin-left: -650px; margin-top: -21px;}*/
+/*.banner-right{ background: url(../img/banner-next-btn.png); right: 50%; margin-right: -650px; margin-top: -21px;}*/
 .banner-Btn a:hover,.banner-Btn a:active{ opacity: 1; filter: alpha(opacity=100);}
 
 /*首页中间内容部份*/
@@ -135,8 +135,8 @@ body{background: white;}
 .xwdt-bj{
 	display:block;
 	width:100%;
-	margin-top:5px;
-	background:url(../img/line_400.jpg) no-repeat;}
+	margin-top:5px;}
+	/*background:url(../img/line_400.jpg) no-repeat;}*/
 /*新闻动态内容部分*/
 .xwdt-footer ul{
 	margin-top:5px;
@@ -154,7 +154,7 @@ body{background: white;}
 }
 .line-400{
 	display:block;
-	background:url(../img/xuxian_line.jpg) no-repeat;
+	/*background:url(../img/xuxian_line.jpg) no-repeat;*/
 }
 
 /*新闻动态标题的样式*/
@@ -167,7 +167,7 @@ body{background: white;}
 }
 .xwdt-radius{
 	line-height:44px;
-	background:url(../img/radius_01.jpg) left center no-repeat;
+	/*background:url(../img/radius_01.jpg) left center no-repeat;*/
 	float:left;
 }
 /*新闻动态切换效果*/
@@ -194,7 +194,7 @@ body{background: white;}
 .xwdt-title-1 a{font-size:18px;margin-bottom:-10px;font-size:20px;margin-left:10px;}
 .xwdt-title-2 a{font-size:18px;margin-bottom:-10px;font-size:20px;margin-left:10px;}
 .on{color:red;}
-.xwdt-title i{width:}
+/*.xwdt-title i{width:}*/
 .newsfont{color:#3879D9;margin-right:6px}
 
 .hydt-more i{color:#0578F5;}
@@ -205,7 +205,7 @@ body{background: white;}
 #video{width:28%;float:right;border:0px solid  red;height:237px;overflow:hidden;}
 .video-bottom{width:100%;overflow:hidden;border:0px solid black;}
 .video{margin-top:19px;width:90%;min-height:100px;max-height:185px;}
-.video-bottom div{margin:0 auto;border:0px solid yellow;text-align:center;height:100%;margin-top:19px;background-image:url(../img/video.jpg)}
+.video-bottom div{margin:0 auto;border:0px solid yellow;text-align:center;height:100%;margin-top:19px;}
 
 /*工程业绩*/
 .index-gongcheng{width:100%;height:25px;margin-top:40px;float:left;margin-bottom:20px;}
@@ -291,14 +291,14 @@ body{background: white;}
 .hjgc p{padding:0 20px 0 0;font-size:12px;line-height:1.5;color:#333333;text-indent:0}
 
 /*新闻中心*/
-.news-list li{width:100%;height:30px;border-bottom:1px dashed #BBBFC6;height:}
+.news-list li{width:100%;height:30px;border-bottom:1px dashed #BBBFC6;}
 .news-list li span{float:right;}
 
 /*内容详情页*/
 .news-info{}
 .jiathis_style .button, .jiathis_style .jiathis_txt{padding-right:1px;}
 .news-info h5{font-size:16px;line-height:2;text-align:center;}
-.news-info time{font-size:12px;color:#888888;line-height:1.5text-align:center;}
+.news-info time{font-size:12px;color:#888888;line-height:1.5;text-align:center;}
 .news-content {margin-top:45px;}
 
 /*联系方式*/
