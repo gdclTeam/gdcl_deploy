@@ -41,11 +41,11 @@
             <li class="select">
                 <a href={% url 'gdcl:description' %}>企业概况</a></li>
             <li>
-                <a href={% url 'gdcl:culture' %}>企业文化</a></li>
+                <a href={% url 'gdcl:logo' %}>企业文化</a></li>
             <li>
-                <a href={% url 'gdcl:works' %}>工程业绩</a></li>
+                <a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
             <li>
-                <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
+                <a href={% url 'gdcl:company_news' %}>新闻资讯</a></li>
             <li>
                 <a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
@@ -61,18 +61,14 @@
             </div>
             <div class="qygk-left-bottom">
                 <ul>
-                    <li>
-                        <a href={% url 'gdcl:index' %}>首页</a></li>
-                    <li class="select">
-                        <a href={% url 'gdcl:description' %}>企业概况</a></li>
-                    <li>
-                        <a href={% url 'gdcl:culture' %}>企业文化</a></li>
-                    <li>
-                        <a href={% url 'gdcl:works' %}>工程业绩</a></li>
-                    <li>
-                        <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
-                    <li>
-                        <a href={% url 'gdcl:contact' %}>加入我们</a></li>
+                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                        <a href={% url 'gdcl:company_news' %} class="menu-on">企业新闻</a></li>
+                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                        <a href={% url 'gdcl:movement' %}>行业动态</a></li>
+                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                        <a href={% url 'gdcl:note' %}>通知公告</a></li>
+                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                        <a href={% url 'gdcl:others' %}>其它资讯</a></li>
                 </ul>
             </div>
         </div>
