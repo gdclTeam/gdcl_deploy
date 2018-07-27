@@ -3,24 +3,6 @@
 {% block title %}企业概况-广东成利建设集团有限公司{% endblock %}
 
 {% block body %}
-<!--menu start-->
-<div id="menu">
-    <div class="menu-top">
-        <ul>
-            <li>
-                <a href="http://www.zhcsgc.com/">首页</a></li>
-            <li class="select">
-                <a href="/description.html">企业概况</a></li>
-            <li>
-                <a href="/logo.html">企业文化</a></li>
-            <li>
-                <a href="/rewards.html">工程业绩</a></li>
-            <li>
-                <a href="/company_news.html">新闻资讯</a></li>
-            <li>
-                <a href="/recruitment.html">加入我们</a></li>
-        </ul>
-    </div>
     <!--中间部分-->
     <div class="banner-min"
          style="background:url(/upload/attached/image/20170301/20170301111253_45592.jpg) no-repeat top center;"></div>
@@ -32,27 +14,27 @@
             </div>
             <div class="qygk-left-bottom">
                 <ul>
-                    <a href="/description.html">企业简介</a>
+                    <a href={% url 'gdcl:description' %}>企业简介</a>
 {#                    <li><i class="iconfont newsfont">&#xe6a3;</i>#}
 {#                    <a href="/index_23.html" >昌盛建材</a></a>#}
 {#                    <li><i class="iconfont newsfont">&#xe6a3;</i>#}
 {#                    <a href="/index_22.html" >富茂钢结构</a></a>#}
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/boss.html" class="menu-on">董事长致辞</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/organization.html" >组织架构</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/certification.html" >公司资质</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/reputation.html" >公司荣誉</a></li>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href={% url 'gdcl:boss' %} class="menu-on">董事长致辞</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href={% url 'gdcl:organization' %} >组织架构</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href={% url 'gdcl:certification' %} >公司资质</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href={% url 'gdcl:reputation' %}>公司荣誉</a>
                 </ul>
             </div>
         </div>
         <div class="qygk-right">
             <div class="munu-info">
                 <div id="location">
-                    <b></b><span>当前位置 -> <a href="/">首页</a>-><a href="/description.html">企业概况</a>-><a
-                        href="/boss.html">董事长致辞</a></span>
+                    <b></b><span>当前位置 -> <a href="/">首页</a>-><a href={% url 'gdcl:description' %}>企业概况</a>-><a
+                        href={% url 'gdcl:boss' %}>董事长致辞</a></span>
                 </div>
                 <div class="menu-content">
                     <!--内容详情页-->
@@ -78,5 +60,4 @@
         </div>
     </div>
 
-</div>
 {% endblock body %}
