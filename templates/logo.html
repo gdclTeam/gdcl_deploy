@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
                                                           value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -5,14 +6,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>首页-广东成利建筑集团有限公司 </title>
-    <link rel="stylesheet" href="/template/default/css/default.css"/>
-    <link rel="stylesheet" href="/template/default/css/style.css"/>
-    <link rel="stylesheet" href="/template/default/css/idangerous.swiper.css">
-    <script src="/template/default/js/jquery.min.js"></script>
-    <script src="/template/default/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="/template/default/js/idangerous.swiper.min.js"></script>
-    <script src="/template/default/js/idangerous.swiper.progress.js"></script>
+    <title>企业文化-广东成利建设集团有限公司 </title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/idangerous_swiper.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/SuperSlide.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.progress.js' %}"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +23,7 @@
 </head>
 <div id="index-box">
     <div id="head">
-        <img src="/template/default/img/logo.png">
+        <img src="{% static 'images/logo.png' %}">
         <div class="head-search">
             <form action="" method="post">
                 <input type="text" name="keyword">
@@ -60,16 +61,16 @@
             </div>
             <div class="qygk-left-bottom">
                 <ul>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/logo.html" class="menu-on">品牌标志</a></a>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/management.html">管理理念</a></a>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/show.html">形象展示</a></a>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/video.html">企业视频</a></a>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/employee.html">员工风采</a></a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href="/logo.html" class="menu-on">品牌标志</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href="/management.html">管理理念</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href="/show.html">形象展示</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href="/video.html">企业视频</a>
+                    <li><li class="iconfont newsfont">&#xe6a3;</li>
+                        <a href="/employee.html">员工风采</a>
                 </ul>
             </div>
         </div>
@@ -210,23 +211,22 @@
     </div>
     <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
     <!--footer-->
-    <div style="clear:both;"></div>
-   <div id="footer">
+<div style="clear:both;"></div>
+<div id="footer">
     <div class="foot-top">
         <ul>
-            <li>联系我们</li>
-{#            <li><a href="">企业概况</a></li>#}
-{#            <li><a href="">工程业绩</a></li>#}
-{#            <li><a href="">加入我们</a></li>#}
+            <li><a href={% url 'gdcl:index' %}>首页</a></li>
+            <li><a href={% url 'gdcl:description' %}>企业概况</a></li>
+            <li><a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
     <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
     <br>
     <p>联系电话：</p>
-    <span>版权所有©广东成利建筑集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>   //备号需要修改
+    <span>版权所有©广东成利建筑集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
 
 
 </div>
-
-
 </div>
+</html>
