@@ -37,17 +37,17 @@
     <div class="menu-top">
         <ul>
             <li>
-                <a href="http://www.zhcsgc.com/">首页</a></li>
-            <li>
-                <a href="/description.html">企业概况</a></li>
-            <li>
-                <a href="/logo.html">企业文化</a></li>
+                <a href={% url 'gdcl:index' %}>首页</a></li>
             <li class="select">
-                <a href="/rewards.html">工程业绩</a></li>
+                <a href={% url 'gdcl:description' %}>企业概况</a></li>
             <li>
-                <a href="/company_news.html">新闻资讯</a></li>
+                <a href={% url 'gdcl:culture' %}>企业文化</a></li>
             <li>
-                <a href="/recruitment.html">加入我们</a></li>
+                <a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li>
+                <a href={% url 'gdcl:news' %}>新闻资讯</a></li>
+            <li>
+                <a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
     <!--中间部分-->
@@ -62,19 +62,19 @@
             <div class="qygk-left-bottom">
                 <ul>
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/rewards.html" class="menu-on">获奖工程</a></li>
+                        <a href={% url 'gdcl:rewards' %} >获奖工程</a></li>
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/project_show.html">项目展示</a></li>
+                        <a href={% url 'gdcl:project_show' %}>项目展示</a></li>
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href="/project_photo.html">项目实拍</a></li>
+                        <a href={% url 'gdcl:project_photo' %} class="menu-on">项目实拍</a></li>
                 </ul>
             </div>
         </div>
         <div class="qygk-right">
             <div class="munu-info">
                 <div id="location">
-                    <b></b><span>当前位置 -> <a href="/">首页</a>-><a href="/rewards.html">工程业绩</a>-><a
-                        href="/rewards.html">获奖工程</a></span>
+                    <b></b><span>当前位置 -> <a href={% url 'gdcl:index' %}>首页</a>-><a href={% url 'gdcl:rewards' %}>工程业绩</a>-><a
+                        href={% url 'gdcl:rewards' %}>获奖工程</a></span>
                 </div>
                 <div class="menu-content">
                     <div class="hjgc">
@@ -168,14 +168,14 @@
         <ul>
             <li><a href={% url 'gdcl:index' %}>首页</a></li>
             <li><a href={% url 'gdcl:description' %}>企业概况</a></li>
-            <li><a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li><a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
             <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
     <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
     <br>
     <p>联系电话：</p>
-    <span>版权所有©广东成利建筑集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
+    <span>版权所有©广东成利建设集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
 
 
 </div>

@@ -33,27 +33,27 @@
             <div class="qygk-left-bottom">
                 <ul>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/description.html" >企业简介</a></li>
+                    <a href={% url 'gdcl:description' %}>企业简介</a>
 {#                    <li><i class="iconfont newsfont">&#xe6a3;</i>#}
 {#                    <a href="/index_23.html" >昌盛建材</a></a>#}
 {#                    <li><i class="iconfont newsfont">&#xe6a3;</i>#}
 {#                    <a href="/index_22.html" >富茂钢结构</a></a>#}
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/boss.html" >董事长致辞</a></li>
+                        <a href={% url 'gdcl:boss' %} class="menu-on">董事长致辞</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/organization.html" >组织架构</a></li>
+                        <a href={% url 'gdcl:organization' %} >组织架构</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/certification.html" >公司资质</a></li>
+                        <a href={% url 'gdcl:certification' %} >公司资质</a>
                     <li><li class="iconfont newsfont">&#xe6a3;</li>
-                        <a href="/reputation.html" class="menu-on">公司荣誉</a></li>
+                        <a href={% url 'gdcl:reputation' %}>公司荣誉</a>
                 </ul>
             </div>
         </div>
         <div class="qygk-right">
             <div class="munu-info">
                 <div id="location">
-                    <b></b><span>当前位置 -> <a href="/">首页</a>-><a href="/description.html">企业概况</a>-><a
-                        href="/reputation.html">公司荣誉</a></span>
+                    <b></b><span>当前位置 -> <a href={% url 'gdcl:index' %}>首页</a>-><a href={% url 'gdcl:description' %}>企业概况</a>-><a
+                        href={% url 'gdcl:reputation' %}>公司荣誉</a></span>
                 </div>
                 <div class="menu-content">
                     <!--内容详情页-->
