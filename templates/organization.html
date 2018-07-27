@@ -1,6 +1,8 @@
-{% extends 'base.html' %}
 
-{% block title %}企业概况-广东成利建设集团有限公司{% endblock %}
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}企业概况-广东成利建设集团有限公司{% endblock title%}
 
 {% block body %}
 <!--menu start-->
@@ -23,7 +25,7 @@
     </div>
     <!--中间部分-->
     <div class="banner-min"
-         style="background:url(/upload/attached/image/20170301/20170301111253_45592.jpg) no-repeat top center;"></div>
+         style="background:url({% static 'images/20170301111253_45592.jpg' %}) no-repeat top center;"></div>
     <div id="banner-middle">
         <div class="qygk-left">
             <div class="qygk-left-top">
@@ -41,9 +43,9 @@
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
                         <a href={% url 'gdcl:boss' %}>董事长致辞</a></li>
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href={% url 'gdcl:organization' %} >组织架构</a></li>
+                        <a href={% url 'gdcl:organization' %} class="menu-on">组织架构</a></li>
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
-                        <a href={% url 'gdcl:certification' %} class="menu-on">公司资质</a></li>
+                        <a href={% url 'gdcl:certification' %}>公司资质</a></li>
                     <li><i class="iconfont newsfont">&#xe6a3;</i>
                         <a href={% url 'gdcl:reputation' %}>公司荣誉</a></li>
                 </ul>
