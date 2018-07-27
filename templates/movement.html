@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
                                                           value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -5,14 +6,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>首页-广东成利建筑集团有限公司 </title>
-    <link rel="stylesheet" href="/template/default/css/default.css"/>
-    <link rel="stylesheet" href="/template/default/css/style.css"/>
-    <link rel="stylesheet" href="/template/default/css/idangerous.swiper.css">
-    <script src="/template/default/js/jquery.min.js"></script>
-    <script src="/template/default/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="/template/default/js/idangerous.swiper.min.js"></script>
-    <script src="/template/default/js/idangerous.swiper.progress.js"></script>
+    <title>新闻资讯-广东成利建设集团有限公司</title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/idangerous_swiper.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/SuperSlide.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.progress.js' %}"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +23,7 @@
 </head>
 <div id="index-box">
     <div id="head">
-        <img src="/template/default/img/logo.png">
+        <img src="{% static 'images/logo.png' %}">
         <div class="head-search">
             <form action="" method="post">
                 <input type="text" name="keyword">

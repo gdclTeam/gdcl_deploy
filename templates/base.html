@@ -1,3 +1,4 @@
+{#这个是所有的基础界面，之后要改的只要基于base继承即可#}
 {% load staticfiles %}
 <input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
                                                           value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -37,7 +38,7 @@
     <div class="menu-top">
         <ul>
             <li>
-                <a href="http://www.zhcsgc.com/">首页</a></li>
+                <a href={% url 'gdcl:index' %}>首页</a></li>
             <li class="select">
                 <a href={% url 'gdcl:description' %}>企业概况</a></li>
             <li>
@@ -52,73 +53,11 @@
     </div>
 </div>
 
-{% block body %}{% endblock body %}
-<!--内容详情页-->
-<img src="{% static 'images/in.jpg' %}"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东成利建设集团有限公司（简称广东成利），于2008年05月30日成立，企业注册资金6800万元。<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-广东成利从起初的园林绿化施工企业逐步成长为市政公用工程、建筑工程、园林绿化、地基基础工程、建筑机电安装工程、建筑装修装饰工程、环保工程、钢结构工程、建筑幕墙工程、水利水电工程施工等十余项工程施工资质。<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-广东成利，始终遵循“成效靠质安文明管理，利益重信誉科学经营”的企业使命，坚持贯彻“温厚至诚，精勤日新”企业理念，信奉“筑和厚生”的建筑哲学，坚守“工者至善”的技术精神，遵循“行仁重信”的商业伦理，追求和完善科学管理，以人才战略为依托，以具有高度社会责任感的企业形象面向社会，以优质、创新、诚信服务于各界。始终以建筑美好生活为己任，精心雕琢每一寸空间，倾心演绎建筑经典，矢志成为最专业、最值得信赖的建筑施工企业和最受尊敬的行业领跑者。<br/>
-<img src="/template/default/img/in2.jpg"/> <br/>
-<br/>
-<p style="text-align:center;font-weight:bold;">
-    Profile of the Company
-</p>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Guangdong Jian’an Changsheng Engineering Co.,Ltd., is a State Grade I building construction engineering enterprise and
-its general contracting qualifications include: General Contracting of Grade I Building Engineering Construction,General
-Constracting of Grade I Municipal Engineering.Specialized contracting qualifications, i.e, Building Construction
-Decoration Engineering, Groundwork and Foundation Engineering,Earth and Stone Engineering, along with Steel Structure
-Engineering and Building Curtain-wall Engineering.Now the Company has a staff of about 400 including various kinds of
-professional engineering technicians and economical personnel, among of them,over 30 have senior technical titles,over
-100 have medium technical titles and more than 60 are project manager at different levels.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-The Company has functional departments including Board of Directors, Board of Supervisors, General Manager Office,
-General Engineer Office, General Economic Engineer, General Accountant Office, Personnel Dept., Engineering Dept.,
-Quality Safety Dept., Operation Dept., Equipment Dept., Finance Dept. and Project Manager Dept.; it has a large number
-of workers, and more than 300 sets of various kinds of building construction machinery, road building machinery and
-equipment. The total value of the projects completed by the Company reaches 300 million yuan per year .<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-The company passed the GB/T19001-2008 quality Management System certilication,GB/T24001-2004 Environmental Management
-System certification,GB/T28001-2011 Occupational Health and Safety Management System certilication,the Guangdong
-Provincial Department of Construction to achieve the safe production licenses issued.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-It has completed about 1000 projects large or small. The main projects completed in recent years are: residence areas
-including Yinshi Yayuan, Huanan Mingyu, Rongtai Heting, Xuriwan, Wuzhou Huacheng, Sanhao Mingyuan,Lingnan Shijia,Shiji
-Mingcheng,Xindai Huayuan,Huiqian Huayuan,Zhouji Haoting ,Bixi Licheng,Shishang Xinyuan,GongYuanDao,JinxiuSiji，Jinyu
-Huafu,Zhonglian Xingji,Dongqiao Xincun; Plant Lab Building and Dormitory Building of Guanglian Communications Company,
-Phase I and Phase II of Xu Relay, Jinding Primary School, Senior High School Branch of Doumen No.1 Middle School, Law
-Service Building, Reconstruction Project of S.Yingbin Road, Dongxing Road, Cuiqian Road, Bitumen Road Surface of Liandao
-Levee, and Phase Drainage Project of Baijiao Industrial Park; Southern Flood-draining dyke of Baijiao Industry Park,
-No.1 Bridge of Baijiao Road, Sanban Bridge of Xiaolin, Decoration Project of Shijing Hill Hotel, Decoration Project of
-Headquarter Building of Lizhu Company, Decoration Project of Comprehensive Building of Yide Plaza, No.1 Plant of
-Guanglian Communications Company, and Wanzai Duty-free Mall.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Projects that won Excellent Example Project at Provincial and Municipal level are: Reconstruction Project of S.Yingbin
-Road, Comprehensive Building of Easton Peach Scientific and Technological Park, Lab Building and Dormitory Building of
-Guanglian Communication Company, Hengshan Zhongxin Primary School, Main Production Building of Wangwang Food Co., Ltd.;
-Project that won Double Excellent Example Construction Site for Safe Production and Civilized Construction are:
-Langqingju, Dormitory Building of Senior High School Branch of Doumen Middle School, Sanhao Mingyuan, Phase II Project
-of Zhuhai Xu Relay and Plant of Zhuhai Yongbao Plastics Company. <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Rongtai Heting Project constructed by the Company has been highly acclaim among the industry for its strict and
-effective management measures on high falling. Provincial and Municipal Construction Bureaus specially organized
-relevant departments to held Special Site Meeting on Preventing High Falling on the construction site, and also
-organized experts from all parts of Guangdong Province to visit and experience exchange. <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-During many years of construction management, we always adhere to the tenet of Quality First, Customer Supreme and
-Mutual Beneficial. Our company has been highly acclaimed among owners and all social walks for our high quality, fast
-speed, punctual schedule and considerate warranty service. The honorable titles that the Company won in recent years
-are: National Creditable Construction Example Unit, Zhuhai Excellent Building Engineering Unit for Safe and Civilized
-Unit and Reassurance Enterprise for Building Construction and Decoration, etc. It has been offered Creditable Enterprise
-By Zhuhai Industry and Commerce Administration in a continuous row years. <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Changsheng will, as we did, exert itself in providing quality service and creating long-lasting Changsheng
-brand!<br/></div>
-</div>
-</div>
-</div>
+{#body为后面要加入的东西#}
+{% block body %}
+    
+{% endblock body %}
+
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <!--footer-->
 <div style="clear:both;"></div>
