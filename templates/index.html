@@ -34,12 +34,12 @@
 <div id="menu">
     <div class="menu-top">
         <ul>
-            <li><a href={% url 'gdcl_index:index' %}>首页</a></li>
-            <li><a href={% url 'gdcl_index:description' %}>企业概况</a></li>
-            <li><a href={% url 'gdcl_index:culture' %}>企业文化</a></li>
-            <li><a href={% url 'gdcl_index:works' %}>工程业绩</a></li>
-            <li><a href={% url 'gdcl_index:news' %}>新闻资讯</a></li>
-            <li><a href={% url 'gdcl_index:contact' %}>加入我们</a></li>
+            <li><a href={% url 'gdcl:index' %}>首页</a></li>
+            <li><a href={% url 'gdcl:description' %}>企业概况</a></li>
+            <li><a href={% url 'gdcl:logo' %}>企业文化</a></li>
+            <li><a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
+            <li><a href={% url 'gdcl:company_news' %}>新闻资讯</a></li>
+            <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
 
@@ -100,12 +100,12 @@
             <div class="index-news-top">
                 <b></b>
                 <h3>企业简介</h3>
-                //跳转到企业简介
+
                 <a href="/description.html"><span>more</span> <i class="iconfont" id="font-more"></i></a>
             </div>
             <div class="index-news-bottom">
-                <img src="/upload/attached/image/20170302/20170302093359_99821.jpg">   //换成公司门面图片
-                <span> 广东成利建筑集团有限公司......<a href="/description.html">[更多]</a>  //跳转企业简介
+                <img src="/upload/attached/image/20170302/20170302093359_99821.jpg">
+                <span> 广东成利建筑集团有限公司......<a href="/description.html">[更多]</a>
  </span>
             </div>
         </div>
@@ -117,11 +117,11 @@
                     <li><span class="xwdt-title-1"><a href="javascript:void(0)">企业新闻</a></span></li>
                     <li><span class="xwdt-title-2"><a href="javascript:void(0)">行业动态</a></span></li>
                 </ul>
-                <li class="hydt-more"><a href="/company_news"><span>more</span><i class="iconfont"></i></a></li>   //跳转到新闻资讯
+                <li class="hydt-more"><a href="/company_news"><span>more</span><i class="iconfont"></i></a></li>
             </div>
 
             <div class="bd">
-                <ul><!--新闻动态部分-->    //实现相应新闻页面资讯跳转
+                <ul><!--新闻动态部分-->    
                     <li>
                         <span class="date">2017-04-01</span>
                         <span class="xwdt-radius"> </span>
@@ -303,7 +303,7 @@
         <ul>
             <li><a href={% url 'gdcl:index' %}>首页</a></li>
             <li><a href={% url 'gdcl:description' %}>企业概况</a></li>
-            <li><a href={% url 'gdcl:works' %}>工程业绩</a></li>
+            <li><a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
             <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
