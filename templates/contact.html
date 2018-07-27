@@ -1,6 +1,4 @@
-<input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
-                                                          value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+
 {% load staticfiles %}
 <input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
                                                           value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -41,7 +39,7 @@
         <ul>
             <li>
                 <a href={% url 'gdcl:index' %}>首页</a></li>
-            <li class="select">
+            <li>
                 <a href={% url 'gdcl:description' %}>企业概况</a></li>
             <li>
                 <a href={% url 'gdcl:logo' %}>企业文化</a></li>
@@ -49,13 +47,13 @@
                 <a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
             <li>
                 <a href={% url 'gdcl:company_news' %}>新闻资讯</a></li>
-            <li>
+            <li class="select">
                 <a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
     <!--中间部分-->
     <div class="banner-min"
-         style="background:url(/upload/attached/image/20170301/20170301111125_13699.jpg) no-repeat top center;"></div>
+         style="background:url({% static 'images/20170301111125_13699.jpg' %}) no-repeat top center;"></div>
     <div id="banner-middle">
         <div class="qygk-left">
             <div class="qygk-left-top">
@@ -80,14 +78,14 @@
                     <!--内容详情页-->
                     <div class="contcat-left">
                         <h5>
-                            广东建安昌盛工程有限公司
+                            广东成利建设集团有限公司
                         </h5>
                         <div class="contcat-left-info">
                             电话：0756-2181888 <br/>
                             传真：0756-2181838<br/>
                             邮编：519000<br/>
                             邮箱：csgc@zhcsgc.com<br/>
-                            地址：珠海市香洲梅华东路188号华南名宇11栋三单元3、4楼<br/>
+                            地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室<br/>
                             <br/>
                             Telephone：（0756）2181888 <br/>
                             Fax：（0756）2181838<br/>
@@ -117,10 +115,8 @@
         </ul>
     </div>
     <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
-    <br>
     <p>联系电话：</p>
     <span>版权所有©广东成利建设集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
-
 
 </div>
 </div>
