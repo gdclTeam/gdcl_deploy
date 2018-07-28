@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'gdcl',
-        'USER': 'root',
-        'PASSWORD': 'Yzx970520',
+        'USER': 'gdcltest',
+        'PASSWORD': 'Gdcl123!',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -124,3 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 加入下面的配置
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

@@ -27,6 +27,7 @@
         <img src="{% static 'images/logo.png' %}">
         <div class="head-search">
             <form action="" method="post">
+                {% csrf_token %}
                 <input type="text" name="keyword">
                 <input type="submit" class="submit" value="搜索">
             </form>

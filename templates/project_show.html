@@ -26,6 +26,7 @@
         <img src="{% static 'images/logo.png' %}">
         <div class="head-search">
             <form action="" method="post">
+                {% csrf_token %}
                 <input type="text" name="keyword">
                 <input type="submit" class="submit" value="搜索">
             </form>
@@ -61,11 +62,11 @@
             </div>
             <div class="qygk-left-bottom">
                 <ul>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                    <li><i class="iconfont newsfont">></i>
                         <a href={% url 'gdcl:rewards' %} >获奖工程</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                    <li><i class="iconfont newsfont">></i>
                         <a href={% url 'gdcl:project_show' %} class="menu-on">项目展示</a></li>
-                    <li><i class="iconfont newsfont">&#xe6a3;</i>
+                    <li><i class="iconfont newsfont">></i>
                         <a href={% url 'gdcl:project_photo' %}>项目实拍</a></li>
                 </ul>
             </div>
