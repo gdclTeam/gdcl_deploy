@@ -1,10 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load staticfiles %}
+<input type='hidden' id='loginusername' value='暂无'><input type='hidden' id='loginemail'
+                                                          value='暂无'><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-</body>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>工程业绩-广东成利建设集团有限公司</title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/idangerous_swiper.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/SuperSlide.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.min.js' %}"></script>
+    <script src="{% static 'js/idangerous.swiper.progress.js' %}"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<div id="index-box">
+    <div id="head">
+        <img src="{% static 'images/logo.png' %}">
+        <div class="head-search">
+            <form action="" method="post">
+                <input type="text" name="keyword">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+        </div>
+    </div>
+</div>
+<!--menu start-->
+<div id="menu">
+    <div class="menu-top">
+        <ul>
+            <li>
+                <a href={% url 'gdcl:index' %}>首页</a></li>
+            <li>
+                <a href={% url 'gdcl:description' %}>企业概况</a></li>
+            <li>
+                <a href={% url 'gdcl:logo' %}>企业文化</a></li>
+            <li class="select">
+                <a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
+            <li>
+                <a href={% url 'gdcl:company_news' %}>新闻资讯</a></li>
+            <li>
+                <a href={% url 'gdcl:contact' %}>加入我们</a></li>
+        </ul>
+    </div>
+    <!--中间部分-->
+    <div class="banner-min"
+         style="background:url({% static 'images/20170301111206_19121.jpg' %}) no-repeat top center;"></div>
+    <div id="banner-middle">
+        <div class="qygk-left">
+            <div class="qygk-left-top">
+                <b></b>
+                <h3>工程业绩</h3>
+            </div>
+            <div class="qygk-left-bottom">
+                <ul>
+                    <li><i class="iconfont newsfont">></i>
+                        <a href={% url 'gdcl:rewards' %}>获奖工程</a></li>
+                    <li><i class="iconfont newsfont">></i>
+                        <a href={% url 'gdcl:project_show' %}>项目展示</a></li>
+                    <li><i class="iconfont newsfont">></i>
+                        <a href={% url 'gdcl:project_photo' %} class="menu-on">项目实拍</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="qygk-right">
+            <div class="munu-info">
+                <div id="location">
+                    <b></b><span>当前位置 -> <a href={% url 'gdcl:index' %}>首页</a>-><a href={% url 'gdcl:rewards' %}>工程业绩</a>-><a
+                        href={% url 'gdcl:project_photo' %}>项目实拍</a></span>
+                </div>
+                <div class="menu-content">
+                    <!--内容详情页-->
+
+                    <div class="news-info">
+                        <h5>白藤湖小学</h5>
+                        <time>发布时间：2018-08-20 浏览：468</time>
+                        <!-- JiaThis Button BEGIN -->
+{#                        <div class="jiathis_style">#}
+{#                            <span class="jiathis_txt">分享到：</span>#}
+{#                            <a class="jiathis_button_qzone">QQ空间</a>#}
+{#                            <a class="jiathis_button_tsina">新浪微博</a>#}
+{#                            <a class="jiathis_button_weixin">微信</a>#}
+{#                            <a class="jiathis_button_renren">人人网</a>#}
+{#                            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis"#}
+{#                               target="_blank"></a>#}
+{#                        </div>#}
+
+                        <!-- JiaThis Button END -->
+                        <div class="news-content">
+                            <div style="text-align:center;">
+{#                                <a href={% url '' %}#}
+{#                                   target="_blank"#}
+{#                                   style="color:#333333;text-decoration:none;outline:none;cursor:pointer;font-family:Arial, sans-serif, SimSun;line-height:26.3999996185303px;text-align:-webkit-center;white-space:normal;background-color:#FFFFFF;">#}
+                                    <img
+                                        src="{% static 'images/bthxx.png' %}"
+                                        border="0"
+                                        id="imgE" title="白藤湖小学" width="800" style="border-style:none;"/></a><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+    <!--footer-->
+    <div style="clear:both;"></div>
+    <div id="footer">
+    <div class="foot-top">
+        <ul>
+            <li><a href={% url 'gdcl:index' %}>首页</a></li>
+            <li><a href={% url 'gdcl:description' %}>企业概况</a></li>
+            <li><a href={% url 'gdcl:rewards' %}>工程业绩</a></li>
+            <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
+        </ul>
+    </div>
+    <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心29层2907-08室</p>
+    <p>联系电话：</p>
+    <span>版权所有©广东成利建设集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
+
+</div>
+</div>
 </html>
