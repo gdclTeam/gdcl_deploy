@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ml(@i&q=*tisd26vuv$up#qaqzmjsoo=w#ny$yf=n10dr@st$n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'gdcl',
-        'USER': 'gdcltest',
-        'PASSWORD': 'Gdcl123!',
+        'USER': 'root',
+        'PASSWORD': 'Yzx970520',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }

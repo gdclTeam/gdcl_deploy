@@ -5,7 +5,7 @@
       <paths name="gdcl">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/Django/sites/www.jacksonyang.top/gdcl" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/Django/sites/www.jacksonyang.top/gdcl_new" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
