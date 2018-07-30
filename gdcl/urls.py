@@ -34,4 +34,6 @@ urlpatterns = [
     # 关于我们两个
     url(r'^recruitment/$', views.recruitment, name='recruitment'),
     url(r'^contact/$', views.contact, name='contact'),
+
+    #
 ]
