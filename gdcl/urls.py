@@ -35,5 +35,10 @@ urlpatterns = [
     url(r'^recruitment/$', views.recruitment, name='recruitment'),
     url(r'^contact/$', views.contact, name='contact'),
 
-    #
+    # 项目实拍
+    url(r'^yqsz/$', views.yqsz, name='yqsz'),
+    url(r'^ylgc/$', views.ylgc, name='ylgc'),
+    url(r'^zhgxhmt/$', views.zhgxhmt, name='zhgxhmt'),
+    url(r'^zhsdjzxjxl/$', views.zhsdjzxjxl, name='zhsdjzxjxl'),
+    url(r'^bthxx/$', views.bthxx, name='bthxx'),
 ]
