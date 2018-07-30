@@ -54,13 +54,19 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div style="background-image: url({% static 'images/ad01.jpg' %});"> </div>
+                    <div style="background-image: url({% static 'images/1-1.jpg' %});"> </div>
+                </div>
+{#                <div class="swiper-slide">#}
+{#                    <div style="background-image: url({% static 'images/2.jpg' %});"> </div>#}
+{#                </div>#}
+                <div class="swiper-slide">
+                    <div style="background-image: url({% static 'images/3.jpg' %});"> </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url({% static 'images/ad02.jpg' %});"> </div>
+                    <div style="background-image: url({% static 'images/4.jpg' %});"> </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url({% static 'images/ad03.gif' %});"> </div>
+                    <div style="background-image: url({% static 'images/5.jpg' %});"> </div>
                 </div>
             </div>
         </div>
@@ -102,11 +108,11 @@
                 <b></b>
                 <h3>企业简介</h3>
 
-                <a href="/description.html"><span>more</span><i class="iconfont" id="font-more">+</i></a>
+                <a href="{% url 'gdcl:description' %}"><span>more</span><i class="iconfont" id="font-more">+</i></a>
             </div>
             <div class="index-news-bottom">
                 <img src="/upload/attached/image/20170302/20170302093359_99821.jpg">
-                <span> 广东成利建筑集团有限公司......<a href="/description.html">[更多]</a>
+                <span> 广东成利建筑集团有限公司......<a href="{% url 'gdcl:description' %}">[更多]</a>
  </span>
             </div>
         </div>
@@ -164,9 +170,9 @@
 
                 <ul><!--行业动态部分-->
                     <li>
-                        <span class="date">2015-01-28</span>
+                        <span class="date">2018-06-04</span>
                         <span class="xwdt-radius"> </span>
-                        <a href="/info_60.html"><i class="iconfont newsfont">></i>急需打造更务实的“2.0版”绿色建筑</a><span
+                        <a href="/info_60.html"><i class="iconfont newsfont">></i>建采易集采联盟招募令</a><span
                             class="xwdt-xuxian"> </span>
                     </li>
                     <li>
@@ -231,29 +237,29 @@
             <div class="bd">
                 <ul class="picList">
                     <li>
-                        <div class="pic"><a href="/info_97.html"><img
+                        <div class="pic"><a href={% url 'gdcl:yqsz' %}><img
                                 src="{% static 'images/yqsz.png' %}"/></a></div>
-                        <div class="title"><a href="/info_97.html">银泉山庄</a></div>
+                        <div class="title"><a href={% url 'gdcl:yqsz' %}>银泉山庄</a></div>
                     </li>
                     <li>
-                        <div class="pic"><a href="/info_96.html"><img
+                        <div class="pic"><a href={% url 'gdcl:ylgc' %}><img
                                 src="{% static 'images/ylgc.png' %}"/></a></div>
-                        <div class="title"><a href="/info_96.html">鱼林广场</a></div>
+                        <div class="title"><a href={% url 'gdcl:ylgc' %}>鱼林广场</a></div>
                     </li>
                     <li>
-                        <div class="pic"><a href="/info_95.html"><img
+                        <div class="pic"><a href={% url 'gdcl:zhgxhmt' %}><img
                                 src="{% static 'images/zhgxhmt.png' %}"/></a></div>
-                        <div class="title"><a href="/info_95.html">珠海港鑫和码头</a></div>
+                        <div class="title"><a href={% url 'gdcl:zhgxhmt' %}>珠海港鑫和码头</a></div>
                     </li>
                     <li>
-                        <div class="pic"><a href="/info_93.html"><img
+                        <div class="pic"><a href={% url 'gdcl:zhsdjzxjxl' %}><img
                                 src="{% static 'images/zhsdjzxjxl.png' %}"/></a></div>
-                        <div class="title"><a href="/info_93.html">珠海市第九中学教学楼</a></div>
+                        <div class="title"><a href={% url 'gdcl:zhsdjzxjxl' %}>珠海市第九中学教学楼</a></div>
                     </li>
                     <li>
-                        <div class="pic"><a href="/info_92.html"><img
+                        <div class="pic"><a href={% url 'gdcl:bthxx' %}><img
                                 src="{% static 'images/bthxx.png' %}"/></a></div>
-                        <div class="title"><a href="/info_92.html">白藤湖小学</a></div>
+                        <div class="title"><a href={% url 'gdcl:bthxx' %}>白藤湖小学</a></div>
                     </li>
 {#                    <li>#}
 {#                        <div class="pic"><a href="/info_91.html"><img#}
@@ -308,7 +314,7 @@
             <li><a href={% url 'gdcl:contact' %}>加入我们</a></li>
         </ul>
     </div>
-    <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心21层2107室</p>
+    <p>地址：珠海市香洲区九州大道中1009号钰海环球金融中心29层2907-08室</p>
     <p>联系电话：</p>
     <span>版权所有©广东成利建设集团有限公司 &nbsp;&nbsp;&nbsp;&nbsp;粤ICP备18010232号-1</span>
 </div>

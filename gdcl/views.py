@@ -73,5 +73,24 @@ def recruitment(request):
 def contact(request):
     return render(request, 'contact.html')
 
+#银泉山庄
+def yqsz(request):
+    return  render(request,'yqsz.html')
+
+#鱼林广场
+def ylgc(request):
+    return render(request,'ylgc.html')
+
+#珠海港鑫和码头
+def zhgxhmt(request):
+    return render(request,'zhgxhmt.html')
+
+#珠海市第九中学教学楼
+def zhsdjzxjxl(request):
+    return render(request,'zhsdjzxjxl.html')
+
+#白藤湖小学
+def bthxx(request):
+    return render(request,'bthxx.html')
 
 
