@@ -17,7 +17,7 @@ backports.functools-lru-cache==1.4
 beautifulsoup4==4.6.0
 billiard==3.3.0.23
 blinker==1.4
-bottle==0.12.13
+bottle==0.12.19
 brotlipy==0.7.0
 bs4==0.0.1
 cchardet==2.1.1
