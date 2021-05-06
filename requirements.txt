@@ -65,7 +65,7 @@ Flask-Login==0.4.1
 flask-mongoengine==0.9.5
 Flask-WTF==0.14.2
 future==0.16.0
-gerapy==0.8.5
+gerapy==0.9.3
 gevent==1.2.2
 grab==0.6.38
 greenlet==0.4.12
