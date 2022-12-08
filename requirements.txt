@@ -22,7 +22,7 @@ brotlipy==0.7.0
 bs4==0.0.1
 cchardet==2.1.1
 celery==3.1.25
-certifi==2017.7.27.1
+certifi==2022.12.7
 cffi==1.11.2
 chardet==3.0.4
 chromedriver==2.24.1
